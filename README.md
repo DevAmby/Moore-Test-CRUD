@@ -1,4 +1,4 @@
-## This is a Task Management CRUD Application
+## Task Management CRUD Application
 
 It was built using Laravel 8.12.
 
