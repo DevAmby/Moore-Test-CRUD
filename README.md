@@ -1,26 +1,24 @@
-## Simple Laravel CRUD Application
+## This is a Task Management CRUD Application
 
-A simple laravel task management application using Laravel 8.25.
-
-This is actually the video of Youtube.
-
-Laravel Complete Task Management Application in 45 Minutes using Laravel 8.x with Database & ORM -
-
-[![Watch the video](https://i.ibb.co/XyBXf8k/Screenshot-2022-04-08-at-6-03-10-PM.png)](https://youtu.be/lVUFuS1EQhM)
+It was built using Laravel 8.12.
 
 
-# Installation 
+To begin, Admin must create an account, then after this authentication has been done successfully, admin can go ahead and create, edit, delete and view tasks
+
+
+
+# Installation Procedure
 
 1. Clone Project
 ````sh
-git clone https://github.com/ManiruzzamanAkash/Laravel-Simple-CRUD-App.git
+git clone https://github.com/DevAmby/entrytestcrud.git
 ````
-2. Composer install
+2. Run Composer install or Update
 ````sh
-composer install
+composer update
 ````
 3. Copy `.env.example` file and create `.env` file
-4. Add Database Credential like yours in `.env`
+4. Add Database Credential in `.env`
 ```php
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -29,29 +27,29 @@ DB_DATABASE=your_db_name
 DB_USERNAME=root
 DB_PASSWORD=
 ```
-5. Go to the project - 
+5. Generate APP_KEY
 ```sh
-cd Laravel-Simple-CRUD-App
+php artisan key:generate
 ```
-6. Run Project inside that directory - 
+6. Migrate database table
+```sh
+php artisan migrate
+```
+7. Run Optimization
+```sh
+php artisan optimize
+```
+
+8. Go to the project - 
+```sh
+cd entrytestcrud
+```
+9. Run Project inside that directory - 
 ````sh
 php artisan serve
 ````
-7. Open in Browser 
+10. Open in Browser 
 ````sh
 http://localhost:8000
 ````
-
-### Demo
-<img src="https://i.ibb.co/CQjWFrP/Demo-CRUD-Application.png" alt="Demo-CRUD-Application" border="0">
-
-#### Create Task Page
-<img src="https://i.ibb.co/LJCvKKk/Create-Task-Page.png" alt="Create-Task-Page" border="0">
-
-#### Delete Task Page
-<img src="https://i.ibb.co/RCCkpT7/Delete-task.png" alt="Delete-task" border="0">
-
-
-#### Edit Task Page
-<img src="https://i.ibb.co/ssDy296/Edit-task.png" alt="Edit-task" border="0">
 
